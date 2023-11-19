@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body { transition: background-color 0.5s;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Ensure the body takes the full viewport height */transition:background-color 0.5s;
+    }
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+    #button{
+         color: rgb(34, 34, 36);
+           
+        }
+    </style>
+</head>
+<body>
+    <input id="button" type="button" value="🔆DARK" onclick="toggledarkMode()"/>
+
+    <script>
+        function toggledarkMode(){
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
